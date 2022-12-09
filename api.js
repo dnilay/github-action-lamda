@@ -26,6 +26,7 @@ const getPost = async (event) => {
         });
     } catch (e) {
         console.error(e);
+        console.log('hello');
         response.statusCode = 500;
         response.body = JSON.stringify({
             message: "Failed to get post.",
