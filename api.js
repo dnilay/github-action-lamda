@@ -10,7 +10,7 @@ const { marshall, unmarshall } = require("@aws-sdk/util-dynamodb");
 
 const getPost = async (event) => {
     const response = { statusCode: 200 };
-
+ console.log('hello');
     try {
         const params = {
             TableName: process.env.DYNAMODB_TABLE_NAME,
